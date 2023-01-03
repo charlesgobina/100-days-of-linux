@@ -24,6 +24,8 @@ The log of my #100DaysOfLinux challenge. Started on [January 2, Monday, 2023].
 > The info command
 - The info command provides more and logically related information partaining to a command. It gived you more like a tutorial or cookbook about that command while the man command is more like for reference.
 
+- Man pages are more for quick referencing while info command provides logical and structured documentation.
+
 **Command for the day**
 - man ls
 - info ls
