@@ -12,7 +12,7 @@ The log of my #100DaysOfLinux challenge. Started on [January 2, Monday, 2023].
 **Command for the day**
 - echo $SHELL
 
-### Round 1 Day 2: January 2, Monday
+### Round 1 Day 2: January 3, Monday
 
 **Today's Progress**: 
 > The man command
@@ -29,3 +29,28 @@ The log of my #100DaysOfLinux challenge. Started on [January 2, Monday, 2023].
 **Command for the day**
 - man ls
 - info ls
+
+### Round 1 Day 3: January 4, Monday
+
+**Today's Progress**: 
+Everything in Linux is considered a file. This is because Linux abstracts everything into a virtual file system
+> The Linux File Structure
+- At the root of the file system is a directory called the root directory denoted with `/`
+- Inside the root directory are other directories which hold files relating to specific things
+- For example the dev directory holds files related to your drive.
+- The Home directory holds files related to the current user such as Desktop, Downloads, Documents, Picture and Videos.  
+- etc
+
+> Navigating the Linux Filesystem
+- There are commands that help us navigate this file system
+- `ls` to list contents of a directory
+- `cd` to change directory
+- `pwd` to know current directory
+- `pwd` command reveals the the absolute path to our current directory.
+- The are two types of path in Linux, *absolute* and *relative* paths
+- *Absolute paths* are the full path separated by `/` to our current location. They start from the root of the file system hence always start with `/`
+- *Relative paths* is the path to a file or directory separated by `/` from our current location. They always begin with the current directory we are in.
+
+**Command for the day**
+- pwd -> display present working directory
+- ls / -> list contents of root directory
