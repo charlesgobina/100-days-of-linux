@@ -4,7 +4,7 @@ The log of my #100DaysOfLinux challenge. Started on [January 2, Monday, 2023].
 
 ## Log
 
-### Round 1 Day 1: January 2, Monday
+### Round 1 Day 1: January 2
 
 **Today's Progress**: I'm currently in module 5 of NDG Linux Essentials v2 on the Cisco Network Academy. I'm learning about the command line and today, I came across the shell. The Linux Shell is one of the core parts of the linux Operating system and it provides an interface for users to enter commands which tell the kernel what to do. In other words, the linux shell interpretes commands entered in the terminal.
 - Bash is the most common shell used in linux. It stands for Bourne Again Shell.
@@ -12,7 +12,7 @@ The log of my #100DaysOfLinux challenge. Started on [January 2, Monday, 2023].
 **Command for the day**
 - echo $SHELL
 
-### Round 1 Day 2: January 3, Monday
+### Round 1 Day 2: January 3
 
 **Today's Progress**: 
 > The man command
@@ -30,7 +30,7 @@ The log of my #100DaysOfLinux challenge. Started on [January 2, Monday, 2023].
 - man ls
 - info ls
 
-### Round 1 Day 3: January 4, Monday
+### Round 1 Day 3: January 4
 
 **Today's Progress**: 
 Everything in Linux is considered a file. This is because Linux abstracts everything into a virtual file system
@@ -54,3 +54,28 @@ Everything in Linux is considered a file. This is because Linux abstracts everyt
 **Command for the day**
 - pwd -> display present working directory
 - ls / -> list contents of root directory
+
+### Round 1 Day 4: January 5
+
+**Today's Progress**: 
+> Globbing
+- Glob characters are character with special meaning.
+- The are also called wildcard characters and can be used together with any command
+- They allow us to specify patterns that match file names, making manipulation of many files possible
+- Some of them include
+- `*` which represents 0 or more characters
+- `?` which represents a single character
+- `[]` whcih matches files with any single later contained within the square bracket
+- `!` used in conjuction with `[]` and it negates anything found in the square bracket.
+
+> Basic file manipulation commands
+`cp` copy files and directories. For it to work, source and destination of item you are copying should be specified. use -i option to make sure you don't mistakenly overwrite a file if it already exists in your destination directory
+`mv` renames a file or directory if destination is not provided. The command also moves a file or directory is the destination is provided. use -i option to make sure you don't mistakenly overwrite a file if it already exists in your destination directory
+`touch` creates a new file.
+`rm` deletes file and directories. To delete directories, specify the -r option else delete won't work on directory. use -i option to make sure you don't mistakenly delete a file or directory as you will be prompted before any deletion is done
+`rmdir` deletes a directory but only if it is empty
+`mkdir` creates a directory
+
+**Command for the day**
+- touch the_sky -> creates a file called the_sky
+- rm the_sky -> deletes a file called the_sky
