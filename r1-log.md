@@ -79,3 +79,30 @@ Everything in Linux is considered a file. This is because Linux abstracts everyt
 **Command for the day**
 - touch the_sky -> creates a file called the_sky
 - rm the_sky -> deletes a file called the_sky
+
+### Round 1 Day 5: January 6
+
+**Today's Progress**: 
+> Archiving
+- The process of combining many files into one.
+- The default archiver on linux is called tar
+- tar is short for Tape aRchiver (used to stream many files to a tape for backup or file transfer)
+- Three operation modes include 
+- - create archive [ -c to create an archive, -f followed by a name that'll be used by the archived file. The files to be archived come last ]
+- - extract archive
+- - list content of archive without extracting
+- - compress && decompress using gzip [ -z ]
+- - compress && decompress using bzip2 [-j]
+- While file extensions don’t affect the way a file is treated, the convention is to use .tar for tarballs, and .tar.gz or .tgz for compressed tarballs
+
+> Compressing
+ - Reducing file size.
+ - There are two types of compression
+ - *loseless compression* where information is not removed from the original
+ - *lossy compression* where information is removed from the original
+ - Linux has commands that help compress files. examples include the *gzip* command whcih uses the *Lempel Ziv* compression algorithm to compress files, leaving them with a .gz format
+ - *bzip* command which uses the *Burrows-Wheeler block sorting* algorithm. It has better compress ratio compared to the gzip and compressed files have a .bz extension
+ - *man gzip* to learn more
+
+**Command for the day**
+- tar -czf comp.tar.gz alpah.* -> creates an archive called comp.tar.gz that can be decompressed using zip after extraction.
